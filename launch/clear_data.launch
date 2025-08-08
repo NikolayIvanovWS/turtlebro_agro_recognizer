@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="turtlebro_agro_recognizer" type="clear_data.py" name="clear_data_node" output="screen" />
+</launch>

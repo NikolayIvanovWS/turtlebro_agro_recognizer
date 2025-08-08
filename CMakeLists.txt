@@ -165,6 +165,7 @@ catkin_install_python(PROGRAMS
   src/image_saver.py
   src/prepare_dataset.py
   src/plant_classifier_node.py
+  src/clear_data.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
