@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="turtlebro_agro_recognizer" type="prepare_dataset.py" name="prepare_dataset_node" output="screen" />
+</launch>

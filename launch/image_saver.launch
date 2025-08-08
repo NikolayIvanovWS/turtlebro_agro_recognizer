@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="turtlebro_agro_recognizer" type="image_saver.py" name="image_saver_node" output="screen" />
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="turtlebro_agro_recognizer" type="plant_classifier_node.py" name="plant_classifier_node" output="screen" />
+</launch>
