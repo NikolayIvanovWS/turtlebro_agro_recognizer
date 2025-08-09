@@ -108,7 +108,7 @@ roslaunch turtlebro_agro_recognizer prepare_dataset.launch
 
 ---
 
-## Обучение модели на компьютере (Windows / Linux)
+### 3. Обучение модели на компьютере (Windows / Linux)
 
 После подготовки датасета на Raspberry Pi перенеси папку `data` на компьютер и запусти тренировку:
 
@@ -136,7 +136,7 @@ scp "C:\Users\<имя_пользователя>\Documents\data\model\labels.txt"
 
 ---
 
-### 3. Запуск классификатора (plant_classifier)
+### 4. Запуск классификатора (plant_classifier)
 
 После размещения `model.tflite` и `labels.txt` в `data/model/` запусти ноду классификации:
 
@@ -148,7 +148,7 @@ roslaunch turtlebro_agro_recognizer plant_classifier.launch
 
 ---
 
-### 4. Очистка данных (clear_data)
+### 5. Очистка данных (clear_data)
 
 Удаляет содержимое `data/model` и `data/dataset`.
 
