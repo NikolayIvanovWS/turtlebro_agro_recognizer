@@ -121,7 +121,7 @@ scp -r pi@<IP_АДРЕС_РОБОТА>:/home/pi/catkin_ws/src/turtlebro_agro_rec
 2. **Запусти обучение** (на ПК):
 
 ```bash
-python3 C:\Users\<имя_пользователя>\Documents\turtlebro_agro_recognizer\data\train_model.py
+python3 C:\Users\<имя_пользователя>\Documents\data\train_model.py
 ```
 
 Скрипт использует датасет из `data/dataset/processed` и сохраняет `model.tflite` и `labels.txt` в `data/model/`.
