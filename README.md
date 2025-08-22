@@ -118,15 +118,29 @@ roslaunch turtlebro_agro_recognizer prepare_dataset.launch
 scp -r pi@<IP_АДРЕС_РОБОТА>:/home/pi/catkin_ws/src/turtlebro_agro_recognizer/data "C:\Users\<имя_пользователя>\Documents"
 ```
 
-2. **Запусти обучение** (на ПК):
+2.  **Перейдите в папку с программой для обучения**
+
+Если в терминале вы находитесь в директории `C:\Users\<имя_пользователя>`, то выполните:
 
 ```bash
-python3 C:\Users\<имя_пользователя>\Documents\data\train_model.py
+сd .\Documents\data
+```
+
+Если находитесь в любой другой директории, то выполните:
+
+```bash
+сd C:\Users\<имя_пользователя>\Documents\data
+```
+  
+3.   **Запусти обучение** (на ПК):
+
+```bash
+python train_model.py
 ```
 
 Скрипт использует датасет из `data/dataset/processed` и сохраняет `model.tflite` и `labels.txt` в `data/model/`.
 
-3. **Верни файлы на Raspberry Pi** (выполняется на ПК):
+4. **Верни файлы на Raspberry Pi** (выполняется на ПК):
 
 - Скопировать конкретные файлы:
 
